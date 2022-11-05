@@ -1,0 +1,62 @@
+<Scaffold>
+    <appBar>
+        <AppBar>
+            <title>
+                <Text>$title</Text>
+            </title>
+        </AppBar>
+    </appBar>
+    <body>
+        <ListView.separated itemCount="$itemCount">
+            <itemBuilder>
+                <Function returnType="Widget">
+                    <Script>
+                        set("index", ${args[1]})
+                        set("itemData", getItem($index))
+                    </Script>
+                    <If candidate="lt($index, 2)">
+                        <ListTile>
+                            <title>
+                                <Text>${itemData.title}</Text>
+                            </title>
+                            <subtitle>
+                                <Text>${itemData.subtitle}</Text>
+                            </subtitle>
+                            <leading>
+                                <Image.network>${itemData.image}</Image.network>
+                            </leading>
+                            <onTap>
+                                <Function>
+                                    <Call function="$print">
+                                        <Argument value="$index"/>
+                                    </Call>
+                                </Function>
+                            </onTap>
+                        </ListTile>
+                    </If>
+                    <Else>
+                        <ListTile>
+                            <title>
+                                <Text>what</Text>
+                            </title>
+                            <onTap>
+                                <Function>
+                                    <Call function="$print">
+                                        <Argument value="$index"/>
+                                    </Call>
+                                </Function>
+                            </onTap>
+                        </ListTile>
+                    </Else>
+                </Function>
+            </itemBuilder>
+            <separatorBuilder>
+                <Function returnType="Widget">
+                    <Builder>
+                        <Divider/>
+                    </Builder>
+                </Function>
+            </separatorBuilder>
+        </ListView.separated>
+    </body>
+</Scaffold>
