@@ -1,7 +1,7 @@
 
 # Client for Maya CMS
 
-A http-client for your Maya CMS content.
+A client for your Maya CMS content.
 
 
 [![Version](https://img.shields.io/pub/v/flutter_maya_sdk.svg?color=8e44ad&logo=flutter)](https://pub.dev/packages/flutter_maya_sdk) ![GitHub license](https://img.shields.io/badge/license-MIT-white.svg?style=flat&style=for-the-badge&logo=github)  ![By lynn](https://img.shields.io/badge/aut-Lynn-d35400.svg?label=Author&style=flat&style=for-the-badge&logo=open-collective&labelColor=2980b9)
