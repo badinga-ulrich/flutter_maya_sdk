@@ -12,7 +12,6 @@ import 'package:dbcrypt/dbcrypt.dart';
 
 part 'vars.dart';
 part 'utils.dart';
-part 'background.dart';
 part 'event.dart';
 part 'resource.dart';
 
