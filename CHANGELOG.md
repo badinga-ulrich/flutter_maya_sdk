@@ -1,5 +1,7 @@
-## [1.0.6-b] - Feb 24, 2022.
+## [1.0.6] - Nov 21, 2022.
 - [ADD] SSE Event
+- [ADD] Can Connect To Multiple Maya Instance 
+
 ## [1.0.6-b] - Feb 24, 2022.
 - [UPGRADE] Null safety
 - [CHANGE] Change the initialisation parameter

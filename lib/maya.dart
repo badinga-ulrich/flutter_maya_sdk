@@ -57,7 +57,7 @@ class Maya {
     if (!isConfigured) instance = this;
   }
   // static API collection(String collection) => ;
-  static init(
+  static Maya init(
       {
       // Maya host (url)
       required Uri server,
@@ -65,8 +65,9 @@ class Maya {
       Map<String, dynamic>? defaultFilter,
       Map<String, dynamic> api = const {}}) {
     if (isNotConfigured)
-      Maya(
+      return Maya(
           server: server, token: token, defaultFilter: defaultFilter, api: api);
+    return instance!;
   }
 
   // private function

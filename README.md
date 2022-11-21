@@ -45,14 +45,21 @@ import 'package:flutter_maya_sdk/flutter_maya_sdk.dart';
 ```dart
 import 'package:flutter_maya_sdk/flutter_maya_sdk.dart';
 
-// Minimal Initialisation 
+// Minimal Initialisation of global instance
 Maya.init(
     server: Uri.parse("http://[SERVER HOST]"),
     token: "[API TOKEN]",
 );
+// globale instance is accesible by `Maya.instance`
+
+// Or 
+Maya maya = Maya(
+    server: Uri.parse("http://[SERVER HOST]"),
+    token: "[API TOKEN]",
+)
 ```
 
-### Cocpit is not in root web folder 
+### Maya is not in root web folder 
 
 ```dart
 import 'package:flutter_maya_sdk/flutter_maya_sdk.dart';
@@ -66,6 +73,16 @@ Maya.init(
     //server: Uri.parse("http://[SERVER HOST]/Maya/folder"),
     token: "[API TOKEN]",
 );
+
+// Or 
+Maya maya = Maya(
+    server: Uri.parse("http://[SERVER HOST]"),    
+    // OR
+    //server: Uri.http("[SERVER HOST]"."/Maya/folder"),
+    // OR
+    //server: Uri.parse("http://[SERVER HOST]/Maya/folder"),
+    token: "[API TOKEN]",
+)
 ```
 
 
@@ -225,7 +242,7 @@ Map<String, dynamic> data = await MayaCollection("api_access").save(
 
 ```dart
 // post data to a custom Maya url
-Map<String, dynamic> data = await MayaApi("!/addons/gps").save(
+Map<String, dynamic> data = await MayaApi("!/my/custom/url/gps").save(
   data : {
     lat : -19.016682,
     long : 26.806641,
