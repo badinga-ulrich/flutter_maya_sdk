@@ -1,6 +1,6 @@
 name: flutter_maya_sdk
 description: Consume Maya PHP API within Flutter CLIENT, access to your collection, singleton or save your forms.
-version: 0.0.1
+version: 1.0.6
 
 # author: Ulrich Badinga
 homepage: https://github.com/badinga-ulrich/flutter_maya_sdk
@@ -13,11 +13,6 @@ dependencies:
   liquid_engine: ^0.2.2
   hash: ^1.0.4
   dbcrypt: ^2.0.0
-  xml: ^6.1.0
-  analyzer: ^5.2.0
-  dart_style: ^2.1.1
-  build: ^2.1.0
-  flutter_background_service: ^2.4.5 # FOR BACKGROUND EXECUTION ON MOBILE
   flutter:
     sdk: flutter
 

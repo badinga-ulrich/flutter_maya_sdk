@@ -1,4 +1,6 @@
 ## [1.0.6-b] - Feb 24, 2022.
+- [ADD] SSE Event
+## [1.0.6-b] - Feb 24, 2022.
 - [UPGRADE] Null safety
 - [CHANGE] Change the initialisation parameter
 - [ADD] Allow get undeclared collections

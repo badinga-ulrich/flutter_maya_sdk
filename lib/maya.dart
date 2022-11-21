@@ -3,11 +3,8 @@ library flutter_maya_sdk;
 // Maya REST Client
 import 'dart:async';
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:ui';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_background_service/flutter_background_service.dart';
-import 'package:flutter_background_service_android/flutter_background_service_android.dart';
 import 'package:http/http.dart' as http;
 import 'package:liquid_engine/liquid_engine.dart';
 import 'package:hash/hash.dart';
