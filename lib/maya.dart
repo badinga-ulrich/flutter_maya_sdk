@@ -10,10 +10,10 @@ import 'package:liquid_engine/liquid_engine.dart';
 import 'package:hash/hash.dart';
 import 'package:dbcrypt/dbcrypt.dart';
 
-part 'vars.dart';
-part 'utils.dart';
-part 'event.dart';
-part 'resource.dart';
+part '_vars.dart';
+part '_utils.dart';
+part '_event.dart';
+part '_resource.dart';
 
 class Maya {
   static Maya? instance;
