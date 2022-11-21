@@ -20,7 +20,7 @@ Add a line like this to your package's pubspec.yaml
 
 ```yaml
 dependencies:
-  flutter_maya_sdk: ^1.6.0-dev1
+  flutter_maya_sdk: ^1.6.7-dev1
 ```
 
 And run if your editor don't support flutter

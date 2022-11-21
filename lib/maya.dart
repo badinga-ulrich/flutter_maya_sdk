@@ -10,10 +10,10 @@ import 'package:liquid_engine/liquid_engine.dart';
 import 'package:hash/hash.dart';
 import 'package:dbcrypt/dbcrypt.dart';
 
-part '_vars.dart';
-part '_utils.dart';
-part '_event.dart';
-part '_resource.dart';
+part 'partial/vars.dart';
+part 'partial/utils.dart';
+part 'partial/event.dart';
+part 'partial/resource.dart';
 
 class Maya {
   static Maya? instance;
@@ -542,7 +542,7 @@ class Maya {
     // print("--SUBSCRIBING TO SSE---");
     String url = _config["server"] +
         (_config["baseUrl"] ?? "") +
-        "api/sse/channel/$channel/$event";
+        "/api/sse/channel/$channel/$event";
     // print("-- $url ---");
     
     bool canDo ()=> !streamController.isClosed && !streamController.isPaused;

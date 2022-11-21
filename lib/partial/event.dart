@@ -53,10 +53,7 @@ class MayaEvent {
     _key = key ?? Key("$channel::$event");
     _stream = _instance.on(event,key: _key,channel: channel);
   }
-  close(){
-    _stream.close();
-    // _instance.closeRequest(_key);
-  }
+  Future<dynamic> close() => _stream.close();
   FutureOr<bool> publish({
     dynamic data,
     bool volatile =  false

@@ -1,3 +1,6 @@
+## [1.0.7-dev1] - Nov 21, 2022.
+- [FIX] SSE Error connection
+
 ## [1.0.6] - Nov 21, 2022.
 - [ADD] SSE Event
 - [ADD] Can Connect To Multiple Maya Instance 

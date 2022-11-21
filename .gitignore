@@ -9,6 +9,8 @@
 .buildlog/
 .history
 .svn/
+composer.json
+package.json
 
 # IntelliJ related
 *.iml
